@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Pace University</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Pace University</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-  <!-- Fonts -->
- 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!--CSS-->
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!--NAV-->
+    <div class="container-fluid">
+      <div class="header">
+          <a class="press" onclick="openNav()">Click for more</a>
+          <div class="main-title">
+              <h1 class="title">PACE</h1>
+              <h2 class="under-title"> UNIVERSITY</h2>
+          </div>
+      </div>
 
-<body>
-
-  <!--NAV-->
-  <div class="container-fluid">
-
-   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Academic Programs</a>
-    <a href="#">Student Life</a>
-    <a href="#">Cost and Financial Aid </a>
-    <a href="#">Alumni Success</a>
-   </div>
+      <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#" onclick="academic()">Academic Programs</a>
+          <a href="#" onclick="student()">Student Life</a>
+          <a href="#" onclick="cost()">Cost and Financial Aid</a>
+          <a href="#" onclick="alumni()">Alumni Success</a>
+      </div>
   </div>
 
-  
-  <span onclick="openNav()">Click for more</span>
-  
-  
-
-<script src="script.js"></script>
-
-</body>
+    
+  </body>
+  <script src="script.js"></script>
 </html>

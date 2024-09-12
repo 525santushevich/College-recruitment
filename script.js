@@ -1,8 +1,25 @@
 function openNav() {
-    document.getElementById("mySidenav").classList.add("open");
+    document.getElementById("mySidenav").style.width = "250px";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").classList.remove("open");
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
+function academic() {
+
+}
+
+function student() {
+    
+}
+
+function cost() {
+    
+}
+
+function alumni() {
+    
 }
 
