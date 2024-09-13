@@ -1,28 +1,34 @@
+html, body {
+    background-image: url('/main.jpg');
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.363);
+    margin-top: .8%;
 }
 
 /* title */
 .main-title {
-    flex-grow: 1;
+    width: 100%;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .title {
     margin: 0;
-    font-size: 8em;
-    font-family: "Playfair Display", serif;
-    color: rgb(13, 13, 85);
-}
-
-.under-title {
-    margin: 0;
-    font-size: 3em;
-    font-family: "Playfair Display", serif;
-    color: rgb(13, 13, 85);
+    max-width: 20rem;
 }
 
 /* sidenav */
@@ -33,7 +39,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #14306b;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -44,9 +50,13 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #bdbdbd;
     display: block;
     transition: 0.3s;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-family: "Sofadi One", system-ui;
+    font-size: 2rem;
+
 }
 
 /* Style for close button */
@@ -60,15 +70,32 @@
 
 /* Change color on hover */
 .sidenav a:hover {
-    color: #f1f1f1;
-}
-
-/* Main title style */
-.main-title {
-    text-align: center;
+    color: #b6eaff;
 }
 
 /* Open and close button styles */
 .press {
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white; 
+    border: 2px solid transparent; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif;
+    text-align: center; 
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    text-transform: uppercase;
+}
+
+/* Cool hover effect */
+.press:hover {
+    background: rgba(255, 255, 255, 0.3); 
+    border-color: rgba(255, 255, 255, 0.7); 
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
