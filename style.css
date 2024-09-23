@@ -1,23 +1,28 @@
-html,
 body {
   background-image: url("/main.jpg");
   margin: 0;
   padding: 0;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  width: 100vw;
   height: auto;
 }
 
 .header {
-  display: flex;
+  display: flex table;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
+<<<<<<< HEAD
   width: 100%;
   background-color: rgba(255, 255, 255, 0.678);
   margin-top: 0.8%;
   border-radius: 20px 20px;
+=======
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.726);
+  table-layout: fixed;
+>>>>>>> 631f4c2f89053d984f09ee1df1b5e47f63009fad
 }
 
 /* title */
@@ -173,7 +178,7 @@ body {
   width: 90%;
   justify-content: center;
   align-items: center;
-  margin: 3% auto 0;
+  margin: 6% auto 0;
 }
 
 .description-text {
@@ -292,6 +297,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 
 /*footer*/
+/* Footer */
 .footer {
   background-color: #002d72;
   color: white;
